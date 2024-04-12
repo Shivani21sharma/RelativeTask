@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_alignBottom="@+id/singapore"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/baseline_star_24"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_marginBottom="-46dp"
+        android:textSize="30sp"
+        android:id="@+id/singapore"
+        android:text="Singapore"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/singapore"
+        android:layout_marginBottom="-46dp"
+        android:textSize="20sp"
+        android:id="@+id/Camera"
+        android:text="Camera"
+        />
+
+    <EditText
+        android:id="@+id/etCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/singapore"
+        android:layout_marginLeft="37dp"
+        android:layout_marginBottom="-54dp"
+        android:layout_toRightOf="@+id/Camera"
+        android:hint="Enter Camera Range"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Camera"
+        android:layout_marginBottom="-46dp"
+        android:textSize="20sp"
+        android:id="@+id/Setting"
+        android:text="Setting"
+        />
+
+    <EditText
+        android:id="@+id/etSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etCamera"
+        android:layout_marginLeft="37dp"
+        android:layout_marginBottom="-54dp"
+        android:layout_toRightOf="@+id/Camera"
+        android:hint="Setting"
+        />
+
+    <EditText
+        android:id="@+id/TextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignBottom="@+id/Setting"
+        android:layout_marginBottom="-173dp"
+        android:hint=" Enter Description"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Discard"
+        android:id="@+id/Discard"
+        android:layout_marginBottom="-1dp"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Discard"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="110dp"
+        android:layout_marginBottom="-1dp"
+        android:text="Upload"/>
+
+</RelativeLayout>
